@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { choice } from "./Random";
+import "./Eightball.css";
 
 const BALL_STATES = [
     { msg: "It is certain.", color: "green" },
@@ -31,15 +32,15 @@ const BALL_STATES = [
  * 
  * App -> Eightball
 */
-function Eightball() {
+function Eightball({ answers = BALL_STATES }) {
     const [ball, setBall] = useState({ msg: "Think of a question", color: "black" });
 
     function handleClick() {
-        setBall(choice(BALL_STATES));
+        setBall(choice(answers));
     }
 
     return (
-        <div onClick={handleClick} style={{ "background-color": ball.color }} className="Eightball">
+        <div onClick={handleClick} style={{ backgroundColor: ball.color }} className="Eightball">
             <h3>{ball.msg}</h3>
         </div >
     );

@@ -1,10 +1,9 @@
 import Eightball from './Eightball';
-import logo from './logo.svg';
-import './App.css';
 
+/** Renders Eightball */
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Eightball />
     </div>
   );
