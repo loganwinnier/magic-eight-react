@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Eightball {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  margin: 15rem;
+  padding: 5em;
+  color: white;
+  border-radius: 50%;
+  font-size: 48px;
+  border: black solid 5px;
 }
